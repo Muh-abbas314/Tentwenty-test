@@ -7,7 +7,7 @@ A modern SaaS-style timesheet management application built with Next.js 15, Type
 - Authentication with next-auth
 -  Dashboard with timesheet management
 -  Add/Edit/Delete timesheet entries
--  Filter and status
+-  Filter status
 -  Pagination support
 -  Form validation with Formik & Yup
 
@@ -16,6 +16,14 @@ A modern SaaS-style timesheet management application built with Next.js 15, Type
 - Next.js 15, TypeScript, TailwindCSS
 - shadcn/ui, Formik, Yup, dayjs
 - next-auth (JWT strategy)
+
+
+### Note
+- Calender filter is not working well, So i have to skip its stale logic
+- Didn't have much time to write test cases. So I unit tested and patched most of the edge case for this test.
+
+### Time Spent
+- 24 hrs
 
 ## Getting Started
 
@@ -29,18 +37,13 @@ A modern SaaS-style timesheet management application built with Next.js 15, Type
 npm install
 ```
 
-2. Create `.env.local`:
-```env
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-secret-key-change-in-production
-```
 
-3. Run dev server:
+2. Run dev server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000)
+3. Open [http://localhost:3000](http://localhost:3000)
 
 ## Usage
 
